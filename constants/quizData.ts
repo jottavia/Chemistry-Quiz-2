@@ -1,0 +1,56 @@
+
+import { Question } from '../types';
+
+const rawQuestions: [string, string[], string][] = [
+  ["Anything that has mass and takes up space is called ______.", ["Energy","Matter","Air","Atoms"], "Matter"],
+  ["The smallest unit of matter is a(n) ______.", ["Atom","Cell","Molecule","Element"], "Atom"],
+  ["An ______ is made up of only one kind of atom.", ["Element","Compound","Mixture","Solution"], "Element"],
+  ["Matter can be ______, ______, or ______.", ["Solid, Liquid, Gas","Hot, Cold, Warm","Metal, Wood, Plastic","Small, Medium, Large"], "Solid, Liquid, Gas"],
+  ["The amount of matter in an object is called its ______.", ["Volume","Weight","Mass","Density"], "Mass"],
+  ["Which of the following is NOT a state of matter?", ["Solid","Liquid","Gas","Energy"], "Energy"],
+  ["What is the basic building block of all matter?", ["Cell","Atom","Molecule","Mixture"], "Atom"],
+  ["Which state of matter has a definite shape and volume?", ["Solid","Liquid","Gas","Plasma"], "Solid"],
+  ["Which of the following describes matter?", ["Has no mass","Takes up space","Has no volume","Is only a liquid"], "Takes up space"],
+  ["The amount of space that matter occupies is called ______.", ["Density","Volume","Mass","Weight"], "Volume"],
+  ["Which state of matter takes the shape of its container but has a definite volume?", ["Solid","Liquid","Gas","Plasma"], "Liquid"],
+  ["Which state of matter has particles that move freely and fill any container?", ["Solid","Liquid","Gas","Plasma"], "Gas"],
+  ["Which of the following is an example of matter?", ["Light","Heat","A rock","Sound"], "A rock"],
+  ["Which word best describes anything that has mass and volume?", ["Energy","Atom","Matter","Force"], "Matter"],
+  ["What tool would you use to measure mass?", ["Thermometer","Balance","Ruler","Beaker"], "Balance"],
+  ["An element is a substance that cannot be broken down into simpler ______.", ["Elements","Compounds","Substances","Mixtures"], "Substances"],
+  ["A compound is made when two or more elements are ______ combined.", ["Physically","Chemically","Magnetically","Mechanically"], "Chemically"],
+  ["Water (H₂O) is an example of a ______.", ["Mixture","Compound","Element","Gas"], "Compound"],
+  ["The chemical symbol for oxygen is ______.", ["Ox","O","Oy","Om"], "O"],
+  ["Table salt is made from the elements sodium and ______.", ["Oxygen","Carbon","Chlorine","Hydrogen"], "Chlorine"],
+  ["Which of these is an element?", ["CO₂","H₂O","Na","NaCl"], "Na"],
+  ["Which of these is a compound?", ["O₂","H","H₂O","N"], "H₂O"],
+  ["Which statement is true about elements?", ["Can be broken down","Made of one kind of atom","Always in compounds","Not found in nature"], "Made of one kind of atom"],
+  ["What is the chemical symbol for nitrogen?", ["S","Na","So","N"], "N"],
+  ["Which is made of two or more elements chemically combined?", ["Element","Compound","Mixture","Atom"], "Compound"],
+  ["Which of these is NOT an element?", ["Oxygen","Hydrogen","Carbon dioxide","Gold"], "Carbon dioxide"],
+  ["Which best describes a compound?", ["One type of atom","Two or more atoms chemically bonded","A mixture of elements","A physical blend"], "Two or more atoms chemically bonded"],
+  ["What is the chemical symbol for chlorine?", ["Cl","C","Ch","Ci"], "Cl"],
+  ["Which compound is found in table salt?", ["NaCl","O₂","H","Fe"], "NaCl"],
+  ["Which of the following is an example of an element?", ["Water","Sodium","Carbon dioxide","Salt"], "Sodium"],
+  ["A mixture is made by ______ combining two or more substances.", ["Physically","Chemically","Magnetically","Electrically"], "Physically"],
+  ["In a homogeneous mixture, substances are ______ mixed.", ["Unevenly","Evenly","Not","Partially"], "Evenly"],
+  ["A heterogeneous mixture has parts that are ______ mixed.", ["Evenly","Unevenly","Chemically","Physically"], "Unevenly"],
+  ["Trail mix is an example of a ______ mixture.", ["Homogeneous","Heterogeneous","Solution","Compound"], "Heterogeneous"],
+  ["A solution is a type of ______ mixture.", ["Homogeneous","Heterogeneous","Physical","Chemical"], "Homogeneous"],
+  ["Which of the following is a mixture?", ["Water","Oxygen","Salt water","Gold"], "Salt water"],
+  ["Which mixture is evenly mixed throughout?", ["Trail mix","Granite","Lemonade","Salad"], "Lemonade"],
+  ["Which is NOT a mixture?", ["Air","Iron","Salad","Soil"], "Iron"],
+  ["What type of mixture is salad?", ["Homogeneous","Heterogeneous","Solution","Element"], "Heterogeneous"],
+  ["Which of the following is a solution?", ["Oil and water","Sand and sugar","Salt dissolved in water","Rice and beans"], "Salt dissolved in water"],
+  ["Which is a heterogeneous mixture?", ["Saltwater","Kool-Aid","Vegetable soup","Vinegar"], "Vegetable soup"],
+  ["If you mix sand and iron filings together, what do you have?", ["Compound","Homogeneous mixture","Heterogeneous mixture","Element"], "Heterogeneous mixture"],
+  ["Which of these is NOT a way to separate a mixture?", ["Filtration","Boiling","Chemical reaction","Magnetism"], "Chemical reaction"],
+  ["Which best describes a mixture?", ["One kind of particle","Physically combined materials","Chemically combined materials","Single element"], "Physically combined materials"],
+  ["Which is an example of a homogeneous mixture?", ["Salad","Oil and water","Air","Sand and rocks"], "Air"]
+];
+
+export const QUESTIONS: Question[] = rawQuestions.map(([text, choices, answer]) => ({
+  text,
+  choices,
+  answer
+}));

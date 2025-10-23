@@ -1,0 +1,5 @@
+{
+  "name": "Interactive Science Quiz",
+  "description": "A dynamic practice test application built with React and TypeScript, focusing on Matter, Elements, and Mixtures. Users can test their knowledge, receive immediate feedback, and track their score.",
+  "requestFramePermissions": []
+}
