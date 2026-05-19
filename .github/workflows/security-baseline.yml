@@ -1,0 +1,23 @@
+# Thin caller for the reusable security-baseline workflow maintained at
+# jottavia/sec-scanner/.github/workflows/security-baseline-reusable.yml@v1
+#
+# Deployed to each consumer repo's .github/workflows/security-baseline.yml
+# by scripts/Deploy-Templates.ps1 and the auto-onboarder.
+
+name: Security Baseline
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  schedule:
+    - cron: '0 7 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  call:
+    uses: jottavia/sec-scanner/.github/workflows/security-baseline-reusable.yml@v1
